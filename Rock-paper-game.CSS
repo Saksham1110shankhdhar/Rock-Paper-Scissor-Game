@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(58, 188, 188);
+    display: flex;
+    justify-content: center;
+    
+}
+.Container{
+    background-color: rgb(30, 115, 119);
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 800px;
+    padding: 30px 30px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin: 40px;
+    box-shadow: 5px 8px 5px black;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    display: block;
+    color: rgb(233, 35, 21);
+    background-color: rgb(246, 219, 172);
+    box-shadow: 10px 6px 5px black;
+    border-radius: 10px;
+}
+h2{
+   
+    text-align: center;
+    font-size: 30px;
+    color: rgb(251, 254, 65);
+    margin: 20px 0; /* Add spacing around the heading */
+}
+
+
+.buttons{
+    /*background-color: rgb(30, 85, 99);*/
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.game-button{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 8px 5px black;
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: rgb(247, 212, 71);
+    color: rgb(205, 43, 22);
+    transition-property: all;
+    transition-duration: 8s;
+}
+.game-button:hover{
+    background-color: #fba64a;
+    transform: scaleX(2);
+}
+.game-button:active{
+    background-color: rgb(228, 60, 60);
+   
+}
+.reset-button{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 8px 5px black;
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: rgb(231, 10, 10);
+    color: rgb(16, 3, 2);
+    transition-property: all;
+    transition-duration: 8s;
+}
+.reset-button:hover{
+    background-color: #fba64a;
+    transform: scaleX(2);
+}
+.reset-button:active{
+    background-color: rgb(228, 60, 60);
+   
+}
+.result{
+    position: relative; /* Add this to make .result the containing block */
+    text-align: center;
+    font-size: 30px;
+    color: rgb(250, 234, 5);
+}
+
+#score{
+    position: absolute; /* Change to absolute to move within .result */
+    animation-name: identifier;
+    animation-duration: 5s;
+    animation-iteration-count: 8;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}  
+@keyframes identifier {
+    from{
+        left: 0; /* Start from the left edge of .result */
+    }
+    to{
+        left: 50%; /* Move to the right edge of .result */
+    }
+}
+  
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: block;
+    color: rgb(58, 196, 255);
+}
+
+.Score{
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(251, 205, 145);
+}

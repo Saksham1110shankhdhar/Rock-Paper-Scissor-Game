@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Styling/Rock-paper-game.CSS">
+    <script src="https://kit.fontawesome.com/53093d5d02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="Container">
+        <h1>Welcome To The Rock-Paper-Scissors Game</h1>
+
+        <br>
+        <h2>Let's Start The Game</h2>
+        <h2>Click Below  👇🏽 of Any Following Boxes </h2>
+
+        <hr><br>
+
+        <div class="buttons">
+
+            
+        <button class="game-button" onclick="
+        onRock();
+          ">🪨Rock</button>
+
+        <button class="game-button" onclick="
+        onPaper();
+        ">📃Paper</button>
+
+        <button class="game-button " onclick="
+        onScissors();
+        ">✂️Scissors</button>
+         
+         <button class="reset-button " onclick="
+        ResetScore();
+        "><i class="fa-solid fa-trash-arrow-up fa-bounce" style="color: #e7fa16;"></i>Reset </button>
+
+ 
+
+        </div><br>
+
+        
+
+        <hr><br>
+
+         
+    <div class="result"><h3 id="score" > Your's Result is given below👇🏼</h3></div>
+    <hr>
+    <br><br><br><br>
+
+    <div class="Score"><i class="fa-solid fa-square-poll-vertical fa-bounce" style="color: #4cc1f7;"><h3>Score</h3></i>  </div>
+
+    </div>
+    
+</body>
+<script src="/Java_script/RPS_GAME.js">
+</script>
+</html>
