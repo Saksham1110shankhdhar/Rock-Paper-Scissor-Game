@@ -1,0 +1,26 @@
+{
+  "name": "rock_paper_scissor_game",
+  "version": "1.0.0",
+  "description": "A classic Rock-Paper-Scissors game built using **HTML, CSS, and JavaScript**. Test your luck against the computer with a clean and colorful interface!",
+  "main": "RPS_GAME.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saksham1110shankhdhar/Rock-Paper-Scissor-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saksham1110shankhdhar/Rock-Paper-Scissor-Game/issues"
+  },
+  "homepage": "https://github.com/Saksham1110shankhdhar/Rock-Paper-Scissor-Game#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
