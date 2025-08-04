@@ -11,8 +11,9 @@ A fun and interactive Rock-Paper-Scissors game built using **HTML, CSS, and Java
 
 ---
 
-## 🔗 Live Demo  
-🎮 [Play Now: Rock-Paper-Scissors Game »](https://saksham1110shankhdhar.github.io/Rock-Paper-Scissor-Game/)  
+🔗 Live Demo  
+🎮 [Play Now: Rock-Paper-Scissors Game »](https://saksham1110shankhdhar.github.io/Rock-Paper-Scissor-Game/)
+
 
 ---
 
@@ -42,16 +43,17 @@ A fun and interactive Rock-Paper-Scissors game built using **HTML, CSS, and Java
 
 📂 Rock_Paper_Scissor_Game/
 ├── Rock-Paper-Scissor.html    # Main game interface  
-├── Rock-paper-game.CSS        # Styling (Light/Dark mode, animations)  
 ├── RPS_GAME.js                # JavaScript (logic, sound, dark mode)  
-├── sounds/                    #
+├── sounds  
+
 🛠️ Technologies Used
 Technology	Purpose
 HTML	Game structure & layout
 CSS	Styling, Flexbox, gradients
 JavaScript	Game logic, sound effects, DOM updates
 
-💻 How to Play Locally
+## 💻 How to Play Locally
+
 1️⃣ Clone the repository:
 git clone https://github.com/Saksham1110shankhdhar/Rock-Paper-Scissor-Game.git
 
@@ -61,14 +63,15 @@ Rock-Paper-Scissor-Game
 3️⃣ Launch the game:
 Open Rock-Paper-Scissor.html in your browser.
 
-📌 Highlighted UI Features
+## 📌 Highlighted UI Features
+
 ✅ Dark & Light Mode toggle with animated transitions.
 ✅ Sound effects (Mute/Unmute button).
 ✅ 3D-styled buttons with hover effects.
 ✅ Animated scoreboard with modern card design.
 ✅ User instructions for quick gameplay.
 
-🙋‍♂️ Author
-👤 Saksham Shankhdhar
+# 🙋‍♂️ Author
+ 👤 Saksham Shankhdhar
 🔗 GitHub Profile »https://github.com/Saksham1110shankhdhar
 
