@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rock Paper Scissors Game</title>
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./src/output.css" />
+  <!-- Favicon (optional, remove if not available) -->
   <link rel="icon" href="favicon.ico" />
 </head>
 <body class="bg-sky-300 flex justify-center items-center min-h-screen transition-colors duration-500">
 
   <div id="gameContainer"
-    class="rounded-2xl p-8 w-[580px] h-[650px] flex flex-col items-center shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-500 bg-gradient-to-br from-cyan-100 via-blue-100 to-sky-200">
+    class="relative rounded-2xl p-6 w-full max-w-md min-h-[80vh] flex flex-col items-center shadow-[0_8px_20px_rgba(0,0,0,0.3)] 
+           transition-all duration-500 bg-gradient-to-br from-cyan-100 via-blue-100 to-sky-200 mx-4">
 
     <!-- Dark Mode Toggle -->
     <button id="darkModeToggle"
@@ -19,13 +21,13 @@
       🌙 Dark
     </button>
 
+    <!-- Sound Toggle -->
     <button id="soundToggle" 
       title="Mute/Unmute Sounds"
-      style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.7); background-color: blueviolet; color: white; border: 4px;; border-radius: 50%; width: 45px; height: 45px; font-size: 20px; cursor: pointer; z-index: 1000;">🔊
+      class="absolute top-4 right-4 bg-violet-600 text-white rounded-full w-11 h-11 flex items-center justify-center 
+             text-lg shadow-md hover:scale-110 transition">
+      🔊
     </button>
-
-    
-
 
     <!-- Title -->
     <h1 class="text-2xl font-bold text-red-600 text-center">Welcome To The Rock-Paper-Scissors Game</h1>
@@ -33,11 +35,11 @@
     <p class="text-center text-blue-600 text-sm mb-4">Click Below ⬇️ on Any Following Boxes</p>
 
     <!-- Buttons -->
-    <div class="flex justify-center gap-4 mt-4">
-      <button onclick="onRock()" class="game-button bg-yellow-400 text-black px-5 py-2 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">✊ Rock</button>
-      <button onclick="onPaper()" class="game-button bg-yellow-400 text-black px-5 py-2 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">📄 Paper</button>
-      <button onclick="onScissors()" class="game-button bg-yellow-400 text-black px-5 py-2 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">✂ Scissors</button>
-      <button onclick="onReset()" class="game-button bg-red-500 text-white px-5 py-2 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#ef4444] transition">🔄 Reset</button>
+    <div class="flex flex-wrap justify-center gap-3 mt-4 w-full">
+      <button onclick="onRock()" class="game-button bg-yellow-400 text-black px-5 py-3 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">✊ Rock</button>
+      <button onclick="onPaper()" class="game-button bg-yellow-400 text-black px-5 py-3 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">📄 Paper</button>
+      <button onclick="onScissors()" class="game-button bg-yellow-400 text-black px-5 py-3 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#facc15] transition">✂ Scissors</button>
+      <button onclick="onReset()" class="game-button bg-red-500 text-white px-5 py-3 rounded-lg shadow-md hover:scale-110 hover:shadow-[0_0_15px_#ef4444] transition">🔄 Reset</button>
     </div>
 
     <!-- Result -->
